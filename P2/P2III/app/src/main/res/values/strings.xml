@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">P2III</string>
+    <string name="Plus">+</string>
+    <string name="Stats">Stats</string>
+    <string name="tiempo">Time: (minutes)</string>
+    <string name="distancia">Distance:</string>
+    <string name="results">estos son los resultado:</string>
+    <string name="name">Name:</string>
+</resources>
