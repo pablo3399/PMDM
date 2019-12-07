@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EntrenamientoNadador</string>
+    <string name="Plus">+</string>
+    <string name="Stats">Stats</string>
+    <string name="tiempo">Time: (minutes)</string>
+    <string name="distancia">Distance: (kilometers)</string>
+    <string name="results">estos son los resultado:</string>
+    <string name="name">Name:</string>
+    <string name="modificar">modificar</string>
+    <string name="eliminar">eliminar</string>
+    <string name="detalles">detalles</string>
+    <string name="anhadir">añadir</string>
+    <string name="stats">estadísticas</string>
+</resources>

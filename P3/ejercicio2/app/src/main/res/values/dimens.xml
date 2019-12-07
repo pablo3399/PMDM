@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textVRightM">5px</dimen>
+    <dimen name="textVLeftM">10dp</dimen>
+    <dimen name="ListViewMargins">20px</dimen>
+    <dimen name="LinearTop">20dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GuardarUsuario</string>
+    <string name="lblNombre">Nombre</string>
+    <string name="lblDireccion">Dirección</string>
+    <string name="lblEmail">E.mail</string>
+    <string name="lblTelefono">Telefono:</string>
+    <string name="lblApellido">Apellido:</string>
+</resources>

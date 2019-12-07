@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TO-DO</string>
+    <string name="Plus">+</string>
+    <string name="cancel">cancelar</string>
+    <string name="accept">aceptar</string>
+    <string name="tareaVacia">Tarea vacia</string>
+    <string name="cambio">no se puede realizar el cambio</string>
+    <string name="caduca">Esta actividad va a caducar: </string>
+    <string name="anhadir">Añadir tarea</string>
+    <string name="modificar">Modificar tarea</string>
+    <string name="eliminar">Eliminar tarea</string>
+    <string name="menuC">Menú</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/detalles"
+        android:id="@+id/context_details" />
+    <item android:title="@string/modificar"
+        android:id="@+id/context_modify" />
+    <item android:title="@string/eliminar"
+        android:id="@+id/context_delete" />
+</menu>
