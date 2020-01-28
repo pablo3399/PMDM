@@ -1,0 +1,10 @@
+
+<resources>
+    <string name="app_name">ListaCompra2</string>
+    <string name="btInserta">Inserta</string>
+    <string name="lblNombre">Nombre</string>
+    <string name="pistaNombre">Nombre...</string>
+    <string name="lblCantidad">Cantidad</string>
+    <string name="btCancelar">Cancela</string>
+    <string name="btGuardar">Guarda</string>
+</resources>

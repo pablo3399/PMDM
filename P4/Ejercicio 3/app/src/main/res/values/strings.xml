@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Entrenamiento</string>
+    <string name="Plus">+</string>
+    <string name="Stats">Stats</string>
+    <string name="tiempo">Tiempo: (minutos)</string>
+    <string name="distancia">Distancia: (kilometros)</string>
+    <string name="results">estos son los resultado:</string>
+    <string name="modificar">modificar</string>
+    <string name="eliminar">eliminar</string>
+    <string name="detalles">detalles</string>
+    <string name="anhadir">añadir</string>
+    <string name="stats">estadísticas</string>
+    <string name="pistaNombre">agrega el nombre del entrenamiento</string>
+    <string name="lblNombre">Nombre: </string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="atras">volver</string>
+    <string name="ok">OK</string>
+    <string name="num">Num:</string>
+    <string name="cero">0</string>
+</resources>
