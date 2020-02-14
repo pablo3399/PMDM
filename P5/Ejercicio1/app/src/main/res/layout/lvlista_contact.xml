@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2"
+        android:padding="5.5dp"
+        >
+    <TableRow>
+        <TextView
+            android:id="@+id/lvLista_Contact_Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="left|center"/>
+
+
+        <TextView
+            android:id="@+id/lvLista_Contact_Telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="right|center"/>
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lvLista_Contact_Apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/lvLista_Contact_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="right|center"/>
+    </TableRow>
+
+    </TableLayout>
+</LinearLayout>

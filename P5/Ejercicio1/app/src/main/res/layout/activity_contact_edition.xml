@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_item_edition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.contactossql.ContactEditionActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".45"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/lblNombre"
+            android:text="@string/lblNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_weight="1" />
+
+        <EditText android:id="@+id/edNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="19dp"
+            android:layout_weight="1"
+            android:hint="@string/pistaNombre"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".45"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/lblApellido"
+            android:text="@string/lblApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_weight="1" />
+
+        <EditText android:id="@+id/edApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_weight="1"
+            android:textSize="19dp"
+            android:hint="@string/pistaApellido"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".45"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/lblTelefono"
+            android:text="@string/lblTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_weight="1" />
+
+        <EditText android:id="@+id/edTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1"
+            android:ems="10"
+            android:layout_weight="1"
+            android:textSize="19dp"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".45"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/lblEmail"
+            android:text="@string/lblEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_weight="1" />
+
+        <EditText android:id="@+id/edEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_weight="1"
+            android:textSize="19dp"
+            android:hint="@string/pistaEmail"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:gravity="right|center_vertical">
+
+        <ImageButton
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btCancelar"
+            android:layout_weight="1"
+            android:background="@color/red"/>
+
+        <ImageButton
+            android:id="@+id/btGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:src="@android:drawable/ic_menu_save" />
+    </LinearLayout>
+
+</LinearLayout>

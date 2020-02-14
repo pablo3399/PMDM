@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AgendaSQL</string>
+    <string name="lblModifica">Modifica</string>
+    <string name="lblElimina">Elimina</string>
+    <string name="lblNombre">Nombre</string>
+    <string name="msgNoPos">Posición incorrecta</string>
+    <string name="pistaNombre">Nombre(s)...</string>
+    <string name="lblApellido">Apellido</string>
+    <string name="pistaApellido">Apellido(s)...</string>
+    <string name="lblEmail">Email</string>
+    <string name="pistaEmail">example@gmail.com</string>
+    <string name="lblTelefono">Telefono</string>
+    <string name="lblAnhadir">Añadir</string>
+</resources>

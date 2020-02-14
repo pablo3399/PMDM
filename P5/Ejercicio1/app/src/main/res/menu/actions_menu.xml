@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/lblAnhadir" android:id="@+id/contact_options_anhadir" />
+    <item android:title="@string/lblModifica" android:id="@+id/contact_options_modifica" />
+    <item android:title="@string/lblElimina" android:id="@+id/contact_options_elimina" />
+</menu>
