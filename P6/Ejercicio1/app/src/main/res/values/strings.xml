@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ControlarWifi</string>
+    <string name="welcome_message">Welcome to Network Connect! \n
+        Click SEE to see if your are conected or not to internet. \n
+        Click on the icon to turn on/of Wi-fi.
+    </string>
+        <string name="fetch_text">See</string>
+        <string name="clear_text">Clear</string>
+        <string name="connection_error">Connection error.</string>
+        <string name="fetch_cancelled">Fetch cancelled.</string>
+    </resources>
