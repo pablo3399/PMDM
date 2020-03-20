@@ -1,0 +1,99 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>List</title>
+
+    <script type="text/javascript">
+
+function edit(){
+Android.eleccionEdit()
+}
+       function funcionBoton(){
+        anhadirItem();
+        limpiarCampo();
+        cargarLista();
+       }
+
+        function limpiarCampo(){
+         document.getElementById("name").value="";
+         document.getElementById("numero").value="";
+         var ul = document.getElementById("Lista");
+         ul.innerHTML=("");
+        }
+
+        function anhadirItem() {
+  var val1 = document.getElementById("name").value;
+  var val2 = document.getElementById("numero").value;
+  var btn = document.getElementById("btn");
+  btn.disabled = true;
+  var data = val1 + ";" + val2;
+   Android.sendData(data);
+ }
+
+function buttonChange(){
+
+var val1 = document.getElementById("name").value;
+var val2 = document.getElementById("numero").value;
+var btn = document.getElementById("btn");
+
+if(!val1=="" && !val2==""){
+   btn.disabled= false;
+}else{
+btn.disabled = true;
+}
+}
+
+function cargarLista(){
+
+var lista = document.getElementById("Lista");
+var bucle = Android.getLoops();
+var nombres = Android.getNombres();
+var nomSep = nombres.split(";");
+var cantidades = Android.getCantidades();
+var cantSep = cantidades.split(";");
+
+for( var i = 0; i < bucle; i++){
+
+var list = document.createElement("li");
+
+var btn = document.createElement("Button");
+btn.innerHTML = (" X");
+
+btn.addEventListener("click", function(e){
+  e.currentTarget.parentNode.remove();
+  Android.delete(parseInt(e.currentTarget.parentNode.id));
+  var ul = document.getElementById("Lista");
+        ul.innerHTML=("");
+  cargarLista();
+
+}, false);
+
+list.setAttribute("id", [i]);
+list.appendChild(document.createTextNode(nomSep[i]+" "+cantSep[i]));
+list.appendChild(btn);
+
+lista.appendChild(list);
+
+}
+
+}
+    </script>
+</head>
+<body onload="cargarLista()">
+
+    <label >Nombre:</label><br>
+<input type="text" id="name" oninput="buttonChange()">
+    <br>
+    <label>Cantidad:</label><br>
+<input type="number" id="numero" oninput="buttonChange()">
+    <button id="btn" value="click" type="button" disabled onclick="funcionBoton()" >Ok</button>
+    <button id="edit" value="click" type="button" onclick="edit()" >Editar</button>
+    <button id="recargar" value="click" type="button" onclick="limpiarCampo(); cargarLista()" >Recargar</button>
+
+<ul id="Lista" style="list-style: none">
+
+</ul>
+
+    </body>
+</html>

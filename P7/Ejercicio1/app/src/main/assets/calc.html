@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Calculator</title>
+    <script type="text/javascript">
+
+function calculate(num) {
+	var edOp1 = document.getElementById( "edOp1" );
+	var edOp2 = document.getElementById( "edOp2" );
+	var dvResult = document.getElementById( "dvResult" );
+	dvResult.innerHTML = "";
+	var pResult = document.createElement( "p" );
+	dvResult.appendChild( pResult );
+	var op1 = parseInt( edOp1.value, 10 );
+	var op2 = parseInt( edOp2.value, 10 );
+
+
+	var sum = op1 + op2;
+	var res = op1 - op2;
+	var mult= op1 * op2;
+	var div = op1 / op2;
+
+    if(edOp1.value==""){
+    pResult.appendChild( document.createTextNode( "Datos requeridos" ) );
+	Android.showToast( "Datos requeridos" );
+	pResult.style.color="red";
+    }
+     else if(edOp2.value==""){
+     pResult.appendChild( document.createTextNode( "Datos requeridos" ) );
+	Android.showToast( "Datos requeridos" );
+	pResult.style.color="red";
+     }else {
+    if(num.value == 1){
+	pResult.appendChild( document.createTextNode( sum.toString() ) );
+	Android.showToast( sum.toString() );
+	pResult.style.background="blue";
+	}else if(num.value == 2){
+	pResult.appendChild( document.createTextNode( res.toString() ) );
+	Android.showToast( res.toString() );
+	pResult.style.background="blue";
+	}else if(num.value == 3){
+	pResult.appendChild( document.createTextNode( mult.toString() ) );
+	Android.showToast( mult.toString() );
+	pResult.style.background="blue";
+	}else if(num.value == 4){
+	pResult.appendChild( document.createTextNode( div.toString() ) );
+	Android.showToast( div.toString() );
+	pResult.style.background="blue";}
+
+    }}
+
+
+</script>
+</head>
+<body>
+<p>
+
+    <input id="edOp1" type="text" size="10" placeholder="0" style="text-align: right"/>
+    <br /><input id="edOp2" type="text" size="10" placeholder="0" style="text-align: right"/>
+
+<p></p>
+    <!-- Lista de selección -->
+    Selecciona la opción deseada:
+<p></p>
+    <select name="combo" id="selector" onchange="calculate(this)">
+        <option hidden disabled selected value> -- select an option -- </option>
+        <option value="1" >Sumar</option>
+        <option value="2" >Restar</option>
+        <option value="3" >Multiplicar</option>
+        <option value="4" >Dividir</option>
+    </select>
+
+</p>
+<p>
+    Resultado:
+<div id="dvResult" >
+</div>
+</p>
+</body>
+</html>

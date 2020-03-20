@@ -1,0 +1,21 @@
+#btn{
+margin left : 12%;
+font-size:15px;
+}
+
+#recargar{
+color: #13159e;
+}
+
+#name, #numero{
+ border: none;
+ border-bottom: 2px solid #00a86b;
+ margin-top : 2%;
+ }
+
+ #edit{
+ color: #0f8516;
+ }
+
+ html{
+ margin-left:3.5%;}
